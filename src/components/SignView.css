@@ -1,0 +1,23 @@
+.SignView {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    }
+
+form {
+    padding-bottom: 10px;
+    }   
+    
+.horoscope_container {
+    display: grid;
+    text-indent: 20px;
+    color: white;
+    padding-top: 60px;
+    padding-bottom: 100px;
+    padding-left: 300px;
+    padding-right: 300px;
+    background-color: black;
+    border-color: aquamarine;
+    }
+    
