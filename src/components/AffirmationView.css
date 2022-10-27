@@ -1,4 +1,4 @@
-.SignView {
+.MadameView {
     align-items: center;
     justify-content: center;
     height: 100%;
@@ -21,7 +21,7 @@
     }
 
     
-.horoscope_container {
+.MadameView-answer {
     display: grid;
     /* text-indent: 20px; */
     text-align: left;

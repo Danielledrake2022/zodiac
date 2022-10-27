@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import { Routes, Route, Link } from "react-router-dom";
 import './App.css';
 import SignView from './components/SignView';
-import MadameView from './components/MadameView';
+import AffirmationView from './components/AffirmationView';
+import MashupView from './components/MashupView';
 
 
 function App() {
-
+ 
   
   function Home() {
     return (
       <>
         <main>
-          <h2>Welcome!</h2>
           <p>You are in the right place at the right time.</p>
         </main>
         <nav>
-          <Link to="/about">Madame Zodiac</Link>
-          <br />
+          <Link to="/about">Affirmations</Link>
+          <br/>
           <Link to="/sign">Horoscope</Link>
+          <br/>
+          <Link to="/mashup">Mash Up</Link>
         </nav>
       </>
     );
@@ -32,12 +34,13 @@ function App() {
         
         <br/>
         <br/>
-        <p>The Zodiac Healer </p>
+        <p>The Zodiac Healer</p>
 
         <Routes>
         < Route path="/" element={<Home />} />
         < Route path="/sign" element={<SignView />} />
-        < Route path="/about" element={<MadameView />} />
+        < Route path="/about" element={<AffirmationView />} />
+        < Route path="/mashup" element={<MashupView />} />
         </Routes>
       </header>
     </div>

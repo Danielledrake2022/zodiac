@@ -22,11 +22,11 @@ export default function SignView() {
 const getHoroscope = () => {
     const url = `http://aztro.sameerkumar.website/?sign=${sign}&day=${date}`;
     fetch(url, { method: "POST" })
-    .then(response => response.json()) // parse the JSON from the server
-    .then(data => { // this is the data from the response
+    .then(response => response.json()) 
+    .then(data => { 
         setHoroscope(data); 
         setLuckyNumber(data.lucky_number);
-        setError(""); // clear the error
+        setError(""); 
     }) 
     .catch(error => {
         setError(error);
@@ -78,20 +78,22 @@ const getHoroscope = () => {
     <div className="horoscope_container">
         {horoscope && (
             <div>
-                <h2>{horoscope.current_date}</h2>
+                <p>{horoscope.current_date}</p>
                 <p>{horoscope.description}</p>
                 <p>{horoscope.color}</p>
-                <p>{horoscope.mood}</p>
+                {/* <p>{horoscope.mood}</p> */}
                 <p>{horoscope.lucky_number}</p>
-                <p>{horoscope.lucky_time}</p>
-                <p>{luckyNumber}</p>
+                {/* <p>{horoscope.lucky_time}</p> */}
+                {/* <p>{luckyNumber}</p> */}
             </div> )}
         {error && <p>{error}</p>}
     </div>
-    <nav>
+    <nav className="navigation_links">
         <Link to="/">Home</Link>
         <br />
-        <Link to="/about">Madame Zodiac</Link>
+        <Link to="/about">Affirmations</Link>
+        <br />
+        <Link to="/mashup">Mash Up</Link>
     </nav>
     </div>
     );
