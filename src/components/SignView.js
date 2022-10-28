@@ -33,7 +33,7 @@ const getHoroscope = () => {
 
     return (
         <div className="SignView">
-            <h1>Horoscope</h1>
+            <br/><p><u>HOROSCOPE</u></p><br/>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="sign">Sign</label>
                 <select 
@@ -74,21 +74,28 @@ const getHoroscope = () => {
     <div className="horoscope_container">
         {horoscope && (
             <div>
-                <p>{horoscope.current_date.toUpperCase()}</p> 
+                <p>{horoscope.current_date.toUpperCase()}</p> <br/> 
                 <p>{horoscope.description}</p>
-                <p>Get powered from the color: {horoscope.color}</p>
-                <p>Spend time with: {horoscope.compatibility}</p>
-                <p>Feeling: {horoscope.mood}</p>
-                <p>Your lucky number is: {horoscope.lucky_number}</p>
-                <p>Enjoy life extra at: {horoscope.lucky_time}</p>
+               <ul className="extra-info"><br/>
+                <p>Creative flow will come from the color {horoscope.color}</p><br/>
+                <p>Spend quality time with a {horoscope.compatibility}</p><br/>
+                <p>During this day you might be feeling {horoscope.mood}</p><br/>
+                <p>Put bets on lucky number {horoscope.lucky_number}</p><br/>
+                <p>Enjoy life extra at {horoscope.lucky_time}</p><br/>
                 {/* <p>{luckyNumber}</p> This is a variable data I could to pass to another child component*/}
-            </div> )}
-        {error && <p>{error}</p>}
-    </div>
-    </div>
-    );
- 
-    }
+                </ul>
+                <br/>
+                <div className="Useful">
+                <p> WAS THIS USEFUL? <button type="button" class="...">Share</button></p>
+                </div>
+                    {/* <link to="mailto:">Email</link> */}
+                </div> )}
+                {error && <p>{error}</p>}
+                </div>
+                </div> 
+                );}
+
+
 
 
 

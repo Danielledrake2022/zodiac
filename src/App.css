@@ -1,5 +1,7 @@
 * { 
   font-family: 'consolas';
+  margin:0;
+  padding:0;
 }
 
 .App {
@@ -55,3 +57,14 @@ html:before {
   background-color:black ;
 }
  
+.Useful {
+  font-size: 15px;
+
+}
+
+
+
+
+
+
+

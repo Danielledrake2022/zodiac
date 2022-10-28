@@ -29,6 +29,7 @@ function App() {
         <img src="https://pbs.twimg.com/profile_images/1394800170290843649/eSMhUxwe_400x400.jpg" className="App-logo" alt="logo" />
         <br/>
         <br/>
+        <br/>
         <p>The Zodiac Healer</p>
         
         <Routes>
