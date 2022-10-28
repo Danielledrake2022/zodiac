@@ -17,12 +17,12 @@ export default function SignView() {
 
 
 const getHoroscope = () => {
-    const url = `http://aztro.sameerkumar.website/?sign=${sign}&day=${date}`;
+    const url = `http://aztro.sameerkumar.website/?sign=${sign}&day=${date}`; // change to https if problem with port continue.
     fetch(url, { method: "POST" })
     .then(response => response.json()) 
     .then(data => { 
         setHoroscope(data); 
-        setLuckyNumber(data.lucky_number);
+        setLuckyNumber(data.lucky_number); // this is not used yet, but would be passed as a prop to another component.
         setError(""); 
     }) 
     .catch(error => {
@@ -76,11 +76,12 @@ const getHoroscope = () => {
             <div>
                 <p>{horoscope.current_date.toUpperCase()}</p> 
                 <p>{horoscope.description}</p>
-                <p>Get power from the color: {horoscope.color}</p>
+                <p>Get powered from the color: {horoscope.color}</p>
+                <p>Spend time with: {horoscope.compatibility}</p>
                 <p>Feeling: {horoscope.mood}</p>
                 <p>Your lucky number is: {horoscope.lucky_number}</p>
                 <p>Enjoy life extra at: {horoscope.lucky_time}</p>
-                {/* <p>{luckyNumber}</p> This is a variable that could be passed down to another view to continue getting new results on...*/}
+                {/* <p>{luckyNumber}</p> This is a variable data I could to pass to another child component*/}
             </div> )}
         {error && <p>{error}</p>}
     </div>
