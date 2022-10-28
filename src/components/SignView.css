@@ -5,20 +5,13 @@
     width: 100%;
     }
 
- form {
-        /* display: grid;
-        align-items: center;
-        grid-template-columns: 1fr 1fr;
-        /* column-gap: 20px; */
-        /* text-align: right; */ 
-    /* display: flex;
-    flex-direction: column;
+ /* form {
+    display: grid;
     align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%; */
-    /* border-bottom: 1px solid white; */
-    }
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px; 
+    text-align: right;  
+    } */
 
     
 .horoscope_container {
@@ -33,20 +26,9 @@
     background-color: black;
     margin: 150px;
     border-radius: 5px;
-    border: 1px solid white;
+    border: 1px solid rgb(67, 63, 63);
     font-size: 80%;
     }
 
-.navigation_links {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 120px;
-    padding-right: 120px;
-    background-color: black;
-    margin: 250px;
-    border-radius: 5px;
-    font-size: 80%;
-    }    
+  
     

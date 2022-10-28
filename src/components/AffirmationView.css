@@ -33,20 +33,9 @@
     background-color: black;
     margin: 150px;
     border-radius: 5px;
-    border: 1px solid white;
+    border: 1px solid rgb(67, 63, 63);
     font-size: 80%;
     }
 
-.navigation_links {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 120px;
-    padding-right: 120px;
-    background-color: black;
-    margin: 250px;
-    border-radius: 5px;
-    font-size: 80%;
-    }    
+   
     

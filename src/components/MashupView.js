@@ -1,38 +1,36 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
- // code to mashup two APIs goes here generate data from both of them and display it on the page at the same time.
- // subject could be compatibility, since Astro API has a compatibility endpoint. 
- // maybe I can also use the same endpoint to get the compatibility between two signs?
-
- // Astro API: https://aztro.sameerkumar.website/ + one more.
-
 
 export default function MashupView() {
-   
-    
 
 
-
-
- // To do multiple fetch requests in parallel, we can use the all() method from the global Promise object in JavaScript.
 
     
     return (  
     
         <div className="MashupView">
-            <h1>Compatibility</h1>
-            <p>Here you can see the compatibility between two signs</p>
-
-
-        <nav>
-            <Link to="/">Home</Link>
-            <br />
-            <Link to="/sign">Horoscope</Link>
-            <br />
-            <Link to="/about">Affirmations</Link>
-        </nav>
-        </div>
+         
+            <p>This view is under construction...</p>
+            <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet"></link>
+            <i class="em em-scorpius" aria-role="presentation" aria-label="SCORPIUS"></i>
+            <i class="em em-cancer" aria-role="presentation" aria-label="CANCER"></i>
+            <i class="em em-aries" aria-role="presentation" aria-label="ARIES"></i>
+            <i class="em em-capricorn" aria-role="presentation" aria-label="CAPRICORN"></i>
+            <i class="em em-pisces" aria-role="presentation" aria-label="PISCES"></i>
+            <i class="em em-gemini" aria-role="presentation" aria-label="GEMINI"></i>
+            <i class="em em-aquarius" aria-role="presentation" aria-label="AQUARIUS"></i>
+            <i class="em em-libra" aria-role="presentation" aria-label="LIBRA"></i>
+            <i class="em em-sagittarius" aria-role="presentation" aria-label="SAGITTARIUS"></i>
+            <i class="em em-leo" aria-role="presentation" aria-label="LEO"></i>
+            <i class="em em-virgo" aria-role="presentation" aria-label="VIRGO"></i>
+            <i class="em em-taurus" aria-role="presentation" aria-label="TAURUS"></i>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+                 
+      </div>
         
     );
     }

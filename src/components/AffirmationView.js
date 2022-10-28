@@ -24,7 +24,6 @@ const getAffirmation = () => {
   return (
      // a form that askes the user a questions and depending on that displays an affirmation in the answer section. - not sure if this is a good way to do it.
     <div className="MadameView">
-      <>
       <p>Answer questions below for your affirmation</p>
       <form className="MadameView-form"> 
         <label>
@@ -44,25 +43,16 @@ const getAffirmation = () => {
           <input type="text" />
         </label>
         </form>   
-        <button onClick={handleSubmit} type="submit">Submit</button> 
+        <button onClick={handleSubmit} type="submit">Get affirmation</button> 
   
        
         {/* Below is your affirmation based on your answers: */}
         <div className="MadameView-answer">
-        <h2>Affirmation</h2>
         <p>
         {/* here insert data from file with affirmations   */}
         {affirmation.affirmation} 
         </p>
         </div>  
-                <nav className="navigation_links">
-                  <Link to="/">Home</Link>
-                  <br />
-                  <Link to="/sign">Horoscope</Link>
-                  <br />
-                  <Link to="/mashup">Mash Up</Link>
-                </nav>
-              </>
             </div>
      
   );

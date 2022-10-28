@@ -70,6 +70,7 @@ const getHoroscope = () => {
                         <option value="">--Please choose an option--</option>
                         <option value="today">Today</option>
                         <option value="tomorrow">Tomorrow</option>
+                        <option value="yesterday">Yesterday</option>
                         </select>
                         <button type="submit">Submit</button>
                         </form>
@@ -78,23 +79,16 @@ const getHoroscope = () => {
     <div className="horoscope_container">
         {horoscope && (
             <div>
-                <p>{horoscope.current_date}</p>
+                <p>{horoscope.current_date.toUpperCase()}</p> 
                 <p>{horoscope.description}</p>
-                <p>{horoscope.color}</p>
-                {/* <p>{horoscope.mood}</p> */}
-                <p>{horoscope.lucky_number}</p>
-                {/* <p>{horoscope.lucky_time}</p> */}
+                <p>Get power from the color: {horoscope.color}</p>
+                <p>Feeling: {horoscope.mood}</p>
+                <p>Your lucky number is: {horoscope.lucky_number}</p>
+                <p>Enjoy life extra at: {horoscope.lucky_time}</p>
                 {/* <p>{luckyNumber}</p> */}
             </div> )}
         {error && <p>{error}</p>}
     </div>
-    <nav className="navigation_links">
-        <Link to="/">Home</Link>
-        <br />
-        <Link to="/about">Affirmations</Link>
-        <br />
-        <Link to="/mashup">Mash Up</Link>
-    </nav>
     </div>
     );
 
