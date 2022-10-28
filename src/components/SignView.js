@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link, Router } from "react-router-dom";
 import "./SignView.css";
 
 
@@ -16,8 +15,6 @@ export default function SignView() {
         getHoroscope();
       };
 
-// create a function that will fetch the horoscope data from the API and set the state of the horoscope variable to the data returned from the API
-// display the horoscope data in the browser
 
 const getHoroscope = () => {
     const url = `http://aztro.sameerkumar.website/?sign=${sign}&day=${date}`;
@@ -33,8 +30,6 @@ const getHoroscope = () => {
         setHoroscope("");
     });
 };
-
-// create a form that will allow the user to select their sign and date and submit the form to get their horoscope from the api. Display the horoscope data in the browser
 
     return (
         <div className="SignView">
@@ -85,16 +80,12 @@ const getHoroscope = () => {
                 <p>Feeling: {horoscope.mood}</p>
                 <p>Your lucky number is: {horoscope.lucky_number}</p>
                 <p>Enjoy life extra at: {horoscope.lucky_time}</p>
-                {/* <p>{luckyNumber}</p> */}
+                {/* <p>{luckyNumber}</p> This is a variable that could be passed down to another view to continue getting new results on...*/}
             </div> )}
         {error && <p>{error}</p>}
     </div>
     </div>
     );
-
-    // create a function that will fetch the horoscope data from the API using POST and the 'sign' and 'date' submitted by the form
-    // display the horoscope data in the browser
-
  
     }
 
