@@ -30,8 +30,8 @@ function App() {
         <br/>
         <br/>
         <br/>
-        <p>The Zodiac Healer</p>
-        
+        <p>- THE ZODIAC HEALER -</p>
+        <br/>
         <Routes>
         < Route path="/" element={<Home />} />
         < Route path="/sign" element={<SignView />} />

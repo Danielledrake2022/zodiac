@@ -26,9 +26,18 @@
     background-color: black;
     margin: 150px;
     border-radius: 5px;
-    border: 1px solid rgb(67, 63, 63);
+    border: 0 solid rgb(67, 63, 63);
     font-size: 80%;
     }
+
+    .planet-img {
+    
+        width: 200px;
+        height: 250px;
+        margin: auto;
+
+      }
+ 
 
  footer {
     display: flex;
@@ -41,6 +50,7 @@
     /* border-bottom: 1px solid white; */
     }
 
+   
 
   
     
