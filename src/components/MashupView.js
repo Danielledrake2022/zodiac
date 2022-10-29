@@ -6,12 +6,6 @@ import "./MashupView.css";
 export default function MashupView() {
 
 
-
-
-
-
-
-
     return (  
 
 <div className="MashupView">
@@ -41,53 +35,6 @@ export default function MashupView() {
 
 
 
-
-
-
-    // <div className="MashupView">
-    //     <div class="container">
-    //         <section>
-    //             <form onSubmit={handleSubmit}> 
-        
-    //     <label>
-    //     <input type="text" required id="name" value={user} onChange={e => setUser(e.target.value)} />
-    //       <div class="label-text">Name</div>
-    //     </label>
-       
-    //     <label htmlFor="sign">
-    //     <select id="sign" value={sign} onChange={e => setSign(e.target.value)}
-    //                 >
-    //                 <option value="">--Please choose an option--</option>
-    //                 <option value="aries">Aries</option>
-    //                 <option value="taurus">Taurus</option>
-    //                 <option value="gemini">Gemini</option>
-    //                 <option value="cancer">Cancer</option>
-    //                 <option value="leo">Leo</option>
-    //                 <option value="virgo">Virgo</option>
-    //                 <option value="libra">Libra</option>
-    //                 <option value="scorpio">Scorpio</option>
-    //                 <option value="sagittarius">Sagittarius</option>
-    //                 <option value="capricorn">Capricorn</option>
-    //                 <option value="aquarius">Aquarius</option>
-    //                 <option value="pisces">Pisces</option>
-    //                 </select>   
-    //                 <div class="label-text">Sign</div>
-    //                 </label>
-                    
-    //                 <label htmlFor="date"> 
-    //                 <select id="date" value={date} onChange={e => setDate(e.target.value)}
-    //                 >
-    //                     <option value="">--Please choose an option--</option>
-    //                     <option value="today">Today</option>
-    //                     <option value="tomorrow">Tomorrow</option>
-    //                     <option value="yesterday">Yesterday</option>
-    //                     </select> 
-    //                     <div class="label-text">Date</div>
-    //                     </label>
-    //                     <button type="submit">Submit</button>
-    //                     </form>
-    //                     </section>
-    //                     </div>
 
 
 

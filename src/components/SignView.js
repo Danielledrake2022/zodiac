@@ -36,16 +36,18 @@ const getHoroscope = () => {
 
     return (
         <div className="SignView">
-        <p>HOROSCOPE</p><br/>
-            <form onSubmit={handleSubmit}>  
-            <label>Name</label> 
-            <input type="text" placeholder="name" value={user} onChange={e => setUser(e.target.value)} />
-            <br/>
-                <label htmlFor="sign">Sign</label>
-                <select 
-                    id="sign"
-                    value={sign}
-                    onChange={e => setSign(e.target.value)}
+        <p className="intro"><u>HERE IT COULD SAY SOMETHING INTERESTING ON THE HISTORY OF LOOKING TO THE STARS FOR GUIDENCE...</u></p><br/>
+             <div class="container">
+             <section>
+                <form onSubmit={handleSubmit}> 
+        
+            <label>
+        <input type="text" required id="name" value={user} onChange={e => setUser(e.target.value)} />
+        <div class="label-text">Name</div>
+        </label>
+       
+        <label htmlFor="sign">
+        <select id="sign" value={sign} onChange={e => setSign(e.target.value)}
                     >
                     <option value="">--Please choose an option--</option>
                     <option value="aries">Aries</option>
@@ -60,22 +62,25 @@ const getHoroscope = () => {
                     <option value="capricorn">Capricorn</option>
                     <option value="aquarius">Aquarius</option>
                     <option value="pisces">Pisces</option>
-                    </select>
+                    </select>   
+                    <div class="label-text">Sign</div> 
+                    </label>
                     
-                    <label htmlFor="date">Date</label>
-                    <select 
-                    id="date"
-                    value={date}
-                    onChange={e => setDate(e.target.value)}
+                    <label htmlFor="date"> 
+                    <select id="date" value={date} onChange={e => setDate(e.target.value)}
                     >
                         <option value="">--Please choose an option--</option>
                         <option value="today">Today</option>
                         <option value="tomorrow">Tomorrow</option>
                         <option value="yesterday">Yesterday</option>
-                        </select>
-                        <button type="submit">Submit</button>
+                        </select> 
+                        <div class="label-text">Date</div>
+                        </label>
+                        <button type="submit">GET HOROSCOPE</button>
                         </form>
-                        <br/>
+                        </section>
+                        </div>
+
                        
     
     <div className="horoscope_container" style={horoscope ? {border: "1px solid rgb(67, 63, 63)"} : {}}> 
