@@ -61,18 +61,16 @@ const getDate = () => {
 
 
   return (
-     // a form that askes the user a questions and depending on that displays an affirmation in the answer section. - not sure if this is a good way to do it.
+    
     <div className="AffirmationView">
       <p className="intro">AFFIRMATIONS HELP PURIFY OUR THOUGHTS AND RESTRUCTURE THE DYNAMIC OUR BRAINS SO THAT WE TRULY BEGIN TO THINK NOTHING IS IMPOSSIBLE</p><br/>
 
       <form className="AffirmationView-form" onSubmit={handleSubmit}> 
 
-        <label htmlFor= "name"> What is your name?</label>
-          <input type="text" name="name" id="name"/>
+        <label htmlFor= "name"> What is your current mood?</label>
+          <input type="text" id="mood" name="mood"/>
 
-      {/* <p></p> */}
-        {/* <label htmlFor="birthday">What is your birthday?</label>
-          <input type="date" name="birthday" id="birthday"/> */}
+
 
         <p></p>
 
@@ -86,11 +84,9 @@ const getDate = () => {
         </form>   
       
   
-     
-        {/* Below is your affirmation based on your answers: */}
         <div className="AffirmationView-answer" style={affirmation.affirmation ? {border: "1px solid rgb(67, 63, 63)"} : {}}> 
-        <div className="AffirmationView-date">{date}</div>
-        <br/>
+        <div className="AffirmationView-date"><u>{date}</u></div>
+       
         <p>{affirmation.affirmation}</p>
         <br/>
         <br/>
@@ -99,7 +95,7 @@ const getDate = () => {
         <div className="enterEmail"> 
         <p> WAS THIS USEFUL? SHARE IT WITH A FRIEND </p>
       <form className="Email-form"> 
-        <label className="Email-label" htmlFor="email">EMAIL</label>
+        <label className="Email-label" htmlFor="email"></label>
         <input
           type="email"
           id="email"
@@ -117,8 +113,9 @@ const getDate = () => {
         <br/> 
         </div>
         <div className="Question-box" style={answer.answer ? {border: "1px solid rgb(67, 63, 63)"} : {}}> 
-        <div className="question-headline">THE ANSWER YOU SEEK</div>
-        <br/>  
+      
+        <br/>
+        <p>THE ANSWER YOU SEEK</p>  
         <div className="question-display">{question}</div>
         <br/>  
         <div className="question-answer">{answer.answer}</div>

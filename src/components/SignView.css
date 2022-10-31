@@ -252,7 +252,7 @@ select {
   border-color: rgb(250, 247, 235);  
   border: 1px solid #F0F0F0;
   color: white;
-  padding: 10px 28px;
+  padding: 10px 30px;
   letter-spacing: 2px;
   text-align: center;
   display: inline-block;
@@ -275,9 +275,9 @@ select {
     border-bottom: 1.5px solid #4A4A4A;
     color: white;
     font-size: 15px;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     outline: 0;
-    padding: 10px 20px;
+    padding: 10px 22px;
     text-align: center;
     width: 150px;
     transition: all 0.3s;
