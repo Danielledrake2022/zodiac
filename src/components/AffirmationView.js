@@ -63,16 +63,16 @@ const getDate = () => {
   return (
      // a form that askes the user a questions and depending on that displays an affirmation in the answer section. - not sure if this is a good way to do it.
     <div className="AffirmationView">
-      <p>Affirmations help purify our thoughts and restructure the dynamic of our brains so that we truly begin to think nothing is impossible. </p>
+      <p className="intro">AFFIRMATIONS HELP PURIFY OUR THOUGHTS AND RESTRUCTURE THE DYNAMIC OUR BRAINS SO THAT WE TRULY BEGIN TO THINK NOTHING IS IMPOSSIBLE</p><br/>
 
       <form className="AffirmationView-form" onSubmit={handleSubmit}> 
 
         <label htmlFor= "name"> What is your name?</label>
           <input type="text" name="name" id="name"/>
 
-      <p></p>
-        <label htmlFor="birthday">What is your birthday?</label>
-          <input type="date" name="birthday" id="birthday"/>
+      {/* <p></p> */}
+        {/* <label htmlFor="birthday">What is your birthday?</label>
+          <input type="date" name="birthday" id="birthday"/> */}
 
         <p></p>
 
@@ -97,6 +97,7 @@ const getDate = () => {
         <br/>
         </div>
         <div className="enterEmail"> 
+        <p> WAS THIS USEFUL? SHARE IT WITH A FRIEND </p>
       <form className="Email-form"> 
         <label className="Email-label" htmlFor="email">EMAIL</label>
         <input

@@ -43,7 +43,7 @@ const sendHoroscope = () => {
 
     return (
         <div className="SignView">
-        <p className="intro">GUIDANCE STRAIGHT FROM THE STARS</p><br/>
+        <p className="intro">GET YOUR HOROSCOPE FORECAST BY FILLING OUT THE FORM BELOW</p><br/>
              <div class="container">
              
                 <form onSubmit={handleSubmit}> 
@@ -56,7 +56,7 @@ const sendHoroscope = () => {
         <label htmlFor="sign">
         <select id="sign" value={sign} onChange={e => setSign(e.target.value)}
                     >
-                    <option value="">--Please choose an option--</option>
+                    <option value="">-Choose an option-</option>
                     <option value="aries">Aries</option>
                     <option value="taurus">Taurus</option>
                     <option value="gemini">Gemini</option>
@@ -76,7 +76,7 @@ const sendHoroscope = () => {
                     <label htmlFor="date"> 
                     <select id="date" value={date} onChange={e => setDate(e.target.value)}
                     >
-                        <option value="">--Please choose an option--</option>
+                        <option value="">-Choose an option-</option>
                         <option value="today">Today</option>
                         <option value="tomorrow">Tomorrow</option>
                         <option value="yesterday">Yesterday</option>
@@ -126,7 +126,7 @@ const sendHoroscope = () => {
 
 
                 <div className="signUseful">
-                <p> WAS THIS USEFUL? </p>
+                <p> WAS THIS USEFUL? SHARE IT WITH A FRIEND </p>
                 <br/>
 
                 <div className="emailSign"> 

@@ -1,4 +1,4 @@
-// import logo from './logo.svg';
+
 import { Routes, Route, Link } from "react-router-dom";
 import './App.css';
 import SignView from './components/SignView';
@@ -14,9 +14,9 @@ function App() {
     return (
       <>
         <main>
-          <p>You are in the right place at the right time.</p>
+        <p className="intro">GUIDANCE STRAIGHT FROM THE STARS</p><br/>
           <br/>
-          <img className="planet-img" src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/solar-system-planets-montage-black-and-white-image-ram-vasudev.jpg"/>
+          {/* <img className="planet-img" src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/solar-system-planets-montage-black-and-white-image-ram-vasudev.jpg"/> */}
         </main>
       </>
     );

@@ -7,9 +7,9 @@ import  "./MashupView.css";
     const MashupView = () => {
         return (
           <div className="MashupView">
-            <h1>Sign</h1>
 
             <section>
+
               <div className="img_container">
                 <img
                   src="https://www.pictureboxblue.com/pbb-cont/pbb-up/2019/11/aries-s.jpg"

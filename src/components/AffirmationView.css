@@ -1,4 +1,4 @@
- /* style the button on the AffirmationView */
+ 
 .AffirmationView  {
 font:"consolas";
 font-size: 18px;
@@ -6,7 +6,6 @@ color: white;
 
 }
 
-    /* style the labels on the AffirmationView form */
 .AffirmationView-form {
 display: inline-block;
     text-align: center;
@@ -17,8 +16,6 @@ display: inline-block;
   }
   
     
-
- /* style the input on the AffirmationView form label */
 .AffirmationView-form label  {
     display: inline-block;
     font-size: 20px;
@@ -164,17 +161,24 @@ display: inline-block;
 
   .Email-form button {   
     background-color: transparent;   
-    border: 1px;
     color: white;
     padding: 32px;
     letter-spacing: 2px;
     text-align: center;
     display: inline-block;
-    font-size: 18px;
+    border: 1px solid #F0F0F0;
+    font-size: 16px;
+    padding: 10px 28px;
+    margin: 10px 30px;
 
     cursor: pointer;
   
     }
+    
+   .email-form button:hover {
+        border: 1px;
+        background-color:transparent;
+  }
 
    .Affirm-Useful  { 
     background-color: transparent;   
