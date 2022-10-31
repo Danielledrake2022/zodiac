@@ -230,3 +230,9 @@ display: inline-block;
         text-align: left;
         padding: 0px 0px 20px;
     }
+
+.dark-image { 
+  width: 50%;
+  height: 80%;  
+}
+

@@ -114,7 +114,7 @@ const sendHoroscope = () => {
                 </ul>
 
                 <br/>
-                <img className="planet-img" src="https://c0.wallpaperflare.com/preview/18/14/478/moon-white-planet-full-moon.jpg"/>
+                <img className="planet-img" src="https://images.unsplash.com/photo-1424291194634-c756ae98931a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2067&q=80"/>
                 
 
                 
