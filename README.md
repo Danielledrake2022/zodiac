@@ -1,70 +1,284 @@
-# Getting Started with Create React App
+# Zodiac Healer
+
+### Summary
+
+The Z.H is a web app that displays a user’s horoscope in a modern, minimalistic and easy to digest way. It includes daily affirmation generator, a question and answer oracle and an art gallery. This is an MVP project. 
+
+### Motivation and Description
+
+Over the last few years, interest in astrology has experienced something of a boom, thanks to the general feelings of uncertainty left over by the pandemic, young people’s growing obsession with new-age topics trending on tiktok and rise of investment companies backing astrology apps like Co-Star and Sanctuary.
+
+But finding the simple, easy to read horoscopes has become a bit of a mission. Most sites overcomplicate the user journey, asking for dozens of data points and requiring users to share their emails and contact details before they can even see if this is the site for them.
+
+MyDay helps you move past all the noise and get your daily horoscope in a couple of clicks and displays it in a modern, easy to read way. 
+
+Check it on your way to work, on your coffee break or when there’s a commercial break during your favourite show.
+
+Getting your daily horoscope shouldn’t take time out of your day.
+
+***SIGNS***
+
+|-------------|------------|------------|------------|
+|    Aries    |   Taurus   |   Gemini   |   Cancer   |   
+|-------------|------------|------------|------------|
+|     Leo     |    Virgo   |    Libra   |   Scorpio  | 
+|-------------|------------|------------|------------|
+| Sagittarius |  Capricorn |  Aquarius  |   Pisces   |
+|-------------|------------|------------|------------|
+
+
+
+==============================================================
+
+### Features
+
+This web app has four screens.
+-Home
+-Affirmations
+-Horoscope
+-Art
+
+#### Generate Daily Horoscope
+
+> Parameters
+ - Sign selector
+ - Date selector (today/tomorrow)
+ 
+> Generated Horoscope :
+- Current Date: {{data.current_date}}
+- Compatibility: {{data.compatibility}}   
+- Lucky Number: {{data.lucky_number}}
+- Lucky Time: {{data.lucky_time}}   
+- Color: {{data.color}}
+- Date Range: {{data.date_range}}   
+- Mood: {{data.mood}}
+- Description: {{data.description}}
+
+
+#### Affirmations
+
+> Parameters
+- Mood
+- Question (optional)
+
+> Generated Affirmation :
+- Affirmation: {affirmation.affirmation}
+- Answer: {answer.answer}
+
+#### Art Gallery
+
+> Zodiac signs by English map maker, Sydney Hall (1825) - Royalty Free
+- Image links point to Picture Blue Box where free versions of PDFs can be downloaded for personal use
+
+=====================================================================================
+
+## Installation
+
+
+### Created using React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Built with
 
-In the project directory, you can run:
+- [React](https://reactjs.org/)
+- [React Router](https://reactrouter.com/)
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-### `npm start`
+### Dependencies - Installations
 
-Runs the app in the development mode.\
+***Node.js***
+The JavaScript runtime environment that allows you to run JavaScript on your computer. You can download it from [Node.js](https://nodejs.org/en/).
+
+***React.JS***
+`$npm install react`
+
+***React Router***
+`$npm install react-router-dom@6`
+
+_Dependencies within the src/index.js file:_
+
+```
+Placed at the top of the file:
+import { BrowserRouter } from "react-router-dom";
+
+Ensure the app is wrapped in a <BrowserRouter>:
+
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById("root")
+); 
+```
+
+=================================================================================================
+
+### Dependencies - API
+
+Aztro API - [Aztro](https://aztro.readthedocs.io/en/latest/)
+
+
+#### URL 
+
+`https://aztro.sameerkumar.website/?sign={sign}&day={day}`
+
+
+#### Parameters
+
+| Parameter |   Type   |      Description     |
+|-----------|----------|----------------------|
+|    sign   |  string  |      Zodiac sign     |
+|    day    |  string  | Day of the horoscope |
+
+
+
+#### Response
+
+|   Parameter   |   Type   |           Description          |
+|---------------|----------|--------------------------------|
+|      date     |  string  |           Current date         |
+| compatibility |  string  | Compatibility with other signs |
+| lucky_number  |  integer |    Lucky number for the day    |
+|  lucky_time   |  string  |      Lucky time for the day    |
+|     color     |  string  |       Color for the day        |
+|   date_range  |  string  |     Date range for the day     |
+|      mood     |  string  |          Mood for the day      |
+|  description  |  string  |      Description for the day   |
+
+=====================================================================================
+
+#### Usage
+
+`POST: https://aztro.sameerkumar.website?sign= <sign> &day= <day>`
+
+
+#### Example 
+
+```
+var request = require('request');
+
+var options = {
+url: 'https://aztro.sameerkumar.website/?sign=aries&day=today',
+method: 'POST'
+};
+
+function callback(error, response, body) {
+if (!error && response.statusCode == 200) {
+    console.log(body);
+}
+}
+request(options, callback);
+```
+
+#### Response
+
+```
+{"current_date": "June 23, 2017", "compatibility": " Cancer", "lucky_time": " 7am",
+ "lucky_number": " 64", "color": " Spring Green", "date_range": "Mar 21 - Apr 20",
+ "mood": " Relaxed", "description": "It's finally time for you to think about just
+  one thing: what makes you happy. Fortunately, that happens to be a person who feels
+  the same way. Give yourself the evening off. Refuse to be put in charge of anything."}
+```
+
+==========================================================================================================
+
+
+
+### Start the app via local server
+
+Navigate to the project directory in terminal and run:
+
+`$npm start`
+
+This runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Folder Structure
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+my-react-app/
+  README.md
+  node_modules/
+  package.json
+  public/
+    index.html
+    favicon.ico
+  src/
+    App.css
+    App.js
+    App.test.js
+    index.css
+    index.js
+    logo.svg
+        Components/
+            AffirmationAnswers.js
+            AffirmationData.js
+            AffirmationView.css
+            AffirmationView.js
+            MashupView.css
+            MashupView.js
+            NavBar.css
+            NavBar.js
+            SignView.css
+            SignView.js
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+===================================================================================================
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Local Data Dependencies
 
-### `npm run eject`
+Aside from the API, the app also uses local data files for the affirmations and to store the answers displayed when a user submits a question.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### AffirmationData.js
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This is the local data file that contains the affirmations. The data is stored in an array of objects. The data is exported as a module.
+The data is fetched by the AffirmationView.js file when the user interacts with the affirmation form.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### Affirmation Form field
 
-## Learn More
+|   Parameter  |   Type   |         Description          |
+|--------------|----------|------------------------------|
+|     mood     |  string  |    Mood of the day           |
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+#### Response
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+|   Parameter    |   Type   |      Description     |
+|----------------|----------|----------------------|
+|  affirmation   |  string  |      Affirmation     |
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### AffirmationAnswers.js
 
-### Making a Progressive Web App
+This is the local data file that contains answers for the question field in the affirmation screen. The data is stored in an array of objects. The data is exported as a module.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+#### Affirmation Form Question field
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+|   Parameter   |   Type   |      Description     |
+|---------------|----------|----------------------|
+|    question   |  string  |        Question      |
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+#### Response
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| Parameter  |   Type   |      Description     |
+|------------|----------|----------------------|
+|    answer  |  string  |        Answer        |
+
+
+
+==========================================================================================================
+
+ _This is a student project that was created at [CodeOp](http://codeop.tech), a full stack development bootcamp in Barcelona._

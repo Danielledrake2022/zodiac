@@ -7,7 +7,7 @@ export default function SignView() {
     let [horoscope, setHoroscope] = useState("");
     let [error, setError] = useState("");
     let [user, setUser] = useState("");
-    let [compatibility, setCompatibility] = useState("");
+    
       
     
     const handleSubmit = e => {
@@ -23,7 +23,6 @@ const getHoroscope = () => {
     .then(response => response.json()) 
     .then(data => { 
         setHoroscope(data);
-        setCompatibility(data.compatibility);
          setError(""); 
     }) 
     .catch(error => {

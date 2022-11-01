@@ -107,7 +107,6 @@ font-family: 'consolas';
     max-width: 100%;
     width: 400px;
   }
-  /* once you click in the input the input width box animates */
   
   
   .SignView select:focus {
@@ -296,4 +295,13 @@ select {
     cursor: pointer;
     }
 
+
+     /* align the img to the right of the container  */
+    .planet-img { 
+      float: right;
+      padding: 10px 0px 30px 0px;
+      margin: 10px 0px 0px 10px;
     
+     
+ 
+    }
