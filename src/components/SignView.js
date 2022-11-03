@@ -16,7 +16,7 @@ export default function SignView() {
       };
 
 
-
+//  get horoscope from API  
 const getHoroscope = () => {
     const url = `https://aztro.sameerkumar.website/?sign=${sign}&day=${date}`; // change to https if problem with port continue.
     fetch(url, { method: "POST" })

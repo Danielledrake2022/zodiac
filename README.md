@@ -67,7 +67,7 @@ This web app has four screens.
 
 #### Art Gallery
 
-> Zodiac signs by English map maker, Sydney Hall (1825) - Royalty Free
+> Zodiac signs by English map maker, Sidney Hall (1825) - Royalty Free
 - Image links point to Picture Blue Box where free versions of PDFs can be downloaded for personal use
 
 =====================================================================================

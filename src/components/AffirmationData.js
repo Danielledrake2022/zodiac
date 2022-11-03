@@ -2,44 +2,44 @@
 export default [
   {
     "id": 1,
-    "affirmation": "I believe in you",
+    "affirmation":"I am allowed to have needs and take up space.",
   },
   {
     "id": 2,
-    "affirmation":"I give myself permission to do what is right for me",
+    "affirmation":"I give myself permission to do what is right for me.",
   },
 
   {
     "id": 3,
-    "affirmation":"Don't forget to enjoy the journey",
+    "affirmation":"I am allowed to say no and stand up to my negative thoughts.",
   }
   ,
   {
     "id": 4,
-    "affirmation":"I believe in you",
+    "affirmation":"Today I am going to show the world my greatness.",
   },
   {
       "id": 5,
-      "affirmation":"You make a difference in the world by simply existing in it",
+      "affirmation":"I am grateful for what I have. I am grateful for being here.",
   },
   {
       "id": 6,
-      "affirmation":"You're a smart cookie",
+      "affirmation":"I am confidently making choices that will create a better future.",
   },
   {
       "id": 7,
-      "affirmation":"Struggling means you're learning",
+      "affirmation":"I have a positive attitude and accept with an open heart everything that comes.",
   },
   {
      "id": 8,
-     "affirmation":"Small progress is still progress",
+     "affirmation":"I am capable of balancing ease and effort in my life.",
   },
   {
     "id": 9,
-    "affirmation":"Don't worry if you find flaws in your past creations, it's because you've evolved",
+    "affirmation":"I am listening and open to the messages the universe has to offer today.",
  },
  {
    "id": 10,
-   "affirmation":"The past does not equal the future",
+   "affirmation":"I celebrate the good qualities in others and myself.",
   }
   ]

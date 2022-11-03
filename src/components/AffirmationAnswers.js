@@ -1,29 +1,29 @@
 export default [
     {
       "id": 1,
-      "answer": "It is certain",
+      "answer": "It is certain.",
     },
     {
       "id": 2,
-      "answer":"Without a doubt",
+      "answer":"The stars point to yes.",
     },
   
     {
       "id": 3,
-      "answer":"You may rely on it",
+      "answer":"The outlook is good, it looks to be so.",
     }
     ,
     {
       "id": 4,
-      "answer":"It is decidedly so",
+      "answer":"It is decidedly so.",
     },
     {
         "id": 5,
-        "answer":"Yes, definitely",
+        "answer":"Yes, the planets wish it so.",
     },
     {
         "id": 6,
-        "answer":"The stars are aligned",
+        "answer":"The stars are aligned.",
     },
     {
         "id": 7,
@@ -31,86 +31,66 @@ export default [
     },
     {
        "id": 8,
-       "answer":"Signs point to yes",
+       "answer":"All signs point to yes.",
     },
     {
       "id": 9,
-      "answer":"The outcome is better than you could have imagined",
+      "answer":"The outcome is better than you could have imagined.",
    },
 
 
        {
         "id": 10,
-        "answer":"The signs are hazy, focus and try again",
+        "answer":"The signs are hazy, focus and try again.",
          },
 
     
     {   
         "id": 11,
-        "answer":"The vibrations are good",
+        "answer":"The vibrations are good, what you wish shall pass.",
     },
 
     {
         "id": 12,
-        "answer":"Trust your gut, it's usually right",
+        "answer":"Trust your gut, it's usually right.",
     },
 
     {   
         "id": 13,
-        "answer":"There's something you're not seeing, try again",
+        "answer":"It appears so, but an upcoming decision can change current outcome.",
     },
 
     {
         "id": 14,
-        "answer":"You know the answer, trust yourself",
+        "answer":"It can go either way, so watch out for the signs.",
     },
 
     {
         "id": 15,
-        "answer":"Concentrate and ask again",
+        "answer":"Hmm.. You seem a little distracted. The answer is a solid maybe.",
     },
 
     {
         "id": 16,
-        "answer":"Don't count on it",
+        "answer":"The signs point to no, but a pleasant surprise might turn things around.",
     },
 
     {
         "id": 17,
-        "answer":"There's a fork in the road, choose wisely",
+        "answer":"I wouldn't count on it, but there's a reason for everything.",
     },
 
     {
         "id": 18,
-        "answer":"The signs point to no",
+        "answer":"All your positive energy has paid off, the outlook looks good.",
     },
 
     {
         "id": 19,
-        "answer":"The vibes are off, try again",
+        "answer":"The answer is no, but you can change that.",
     },
 
-    {
-        "id": 20,
-        "answer":"The stars are not aligned",
-    },
-
-    {
-        "id": 21,
-        "answer":"The outcome is not what you hoped for",
-    },
-
-    {
-        "id": 22,
-        "answer":"If you really want it, you'll find a way",
-    },
-
-    {
-        "id": 23,
-        "answer":"The answer was shown to you, but you didn't see it",
-    },
-
-
+ 
 
 
     ]

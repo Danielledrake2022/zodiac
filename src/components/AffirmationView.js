@@ -61,7 +61,8 @@ const getDate = () => {
   return (
     
     <div className="AffirmationView">
-      <p className="intro">AFFIRMATIONS HELP PURIFY OUR THOUGHTS AND RESTRUCTURE THE DYNAMIC OUR BRAINS SO THAT WE TRULY BEGIN TO THINK NOTHING IS IMPOSSIBLE</p><br/>
+      <p className="intro">Affirmations provide us with a moment of peace and a reminder of what’s possible.
+</p><br/>
 
       <form className="AffirmationView-form" onSubmit={handleSubmit}> 
 
@@ -83,8 +84,10 @@ const getDate = () => {
       
   
         <div className="AffirmationView-answer" style={affirmation.affirmation ? {border: "1px solid rgb(67, 63, 63)"} : {}}> 
-        <div className="AffirmationView-date"><u>{date}</u></div>
-       
+        <div className="AffirmationView-date"><u>{date}</u> </div>
+        {affirmation.affirmation ? (<div className="AffirmationHeadline">Your Affirmation:</div>) : (<div></div>)}  
+        
+        <br/>
         <p>{affirmation.affirmation}</p>
         <br/>
         <br/>
@@ -113,11 +116,10 @@ const getDate = () => {
         <div className="Question-box" style={question ? {border: "1px solid rgb(67, 63, 63)"} : {}}> 
       
         <br/>
-        {question ? (
-      <div>
-        <p>THE ANSWER YOU SEEK</p> 
+        {question ? ( <div>
+          <div className="questionHeadline">The Answer You Seek:</div> 
         <br/> 
-        <div className="question-display">{question}</div>
+        <div className="question-display">{question}?</div>
         <br/>  
         <div className="question-answer">{answer.answer}</div>
         <div className="affview">

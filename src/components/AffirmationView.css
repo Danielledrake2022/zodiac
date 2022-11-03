@@ -43,7 +43,11 @@ display: inline-block;
     width: 180px;
   }
   
- 
+  .AffirmationHeadline  {
+        font-size: 14px;
+        color: #edefef; 
+        
+      }
   
 
 .AffirmationView input:focus {
@@ -213,22 +217,22 @@ display: inline-block;
       font-size: 18px;
       }
 
-      .question-headline {
-        font-size: 13px;
-        color: rgb(223, 241, 230);
+      .questionHeadline {
+        font-size: 14px;
+        color: #edefef;
         text-align: left;
-        padding: 0px 0px 20px;
+        padding: 0px 0px 10px;
     }
 
     .question-display {
         font-size: 18px;
         color: rgb(255, 255, 255);
         text-align: left;
-        padding: 0px 0px 20px;
+        padding: 0px 0px 0px;
     }
 
     .question-answer {
-        font-size: 20px;
+        font-size: 18px;
         font-style: italic;
         color: rgb(241, 239, 223);
         text-align: left;
@@ -236,10 +240,10 @@ display: inline-block;
     }
 
 .dark-image { 
-  width: 50%;
-  height: 80%;  
+  width: 40%;
+  height: 60%;  
   float: right;
-      padding: 10px 0px 30px 0px;
+      padding: 10px 0px 10px 0px;
       margin: 10px 0px 0px 10px;
 }
 
