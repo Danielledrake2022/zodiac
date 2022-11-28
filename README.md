@@ -10,7 +10,7 @@ Over the last few years, interest in astrology has experienced something of a b
 
 But finding the simple, easy to read horoscopes has become a bit of a mission. Most sites overcomplicate the user journey, asking for dozens of data points and requiring users to share their emails and contact details before they can even see if this is the site for them.
 
-MyDay helps you move past all the noise and get your daily horoscope in a couple of clicks and displays it in a modern, easy to read way. 
+The Z.H helps you move past all the noise and get your daily horoscope in a couple of clicks and displays it in a modern, easy to read way. 
 
 Check it on your way to work, on your coffee break or when there’s a commercial break during your favourite show.
 
