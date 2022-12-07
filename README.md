@@ -3,6 +3,7 @@
 ### Summary
 
 The Z.H is a web app that displays a user’s horoscope in a modern, minimalistic and easy to digest way. It includes daily affirmation generator, a question and answer oracle and an art gallery. This is an MVP project. 
+Try it out here: https://zodiac-seven.vercel.app/sign
 
 ### Motivation and Description
 
