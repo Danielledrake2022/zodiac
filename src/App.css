@@ -11,6 +11,7 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  filter: blur (0,01px);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -76,7 +77,6 @@ Useful {
   
   text-align: center;
 }
-
 
 
 
